@@ -593,3 +593,8 @@ video {
 [hidden] {
   display: none;
 }
+
+.bg-brand-color {
+  --tw-bg-opacity: 1;
+  background-color: rgba(93, 62, 188, var(--tw-bg-opacity));
+}
