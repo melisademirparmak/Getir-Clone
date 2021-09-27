@@ -648,6 +648,22 @@ html,
   height: 2.75rem;
 }
 
+.h-\[500px\] {
+  height: 500px;
+}
+
+.h-\[300px\] {
+  height: 300px;
+}
+
+.h-\[600px\] {
+  height: 600px;
+}
+
+.w-full {
+  width: 100%;
+}
+
 .items-center {
   align-items: center;
 }
@@ -669,6 +685,10 @@ html,
 .bg-brand-color {
   --tw-bg-opacity: 1;
   background-color: rgba(93, 62, 188, var(--tw-bg-opacity));
+}
+
+.object-cover {
+  object-fit: cover;
 }
 
 .text-sm {
@@ -696,6 +716,10 @@ html,
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css');
 
 .hover\:text-opacity-100:hover {
   --tw-text-opacity: 1;
