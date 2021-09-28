@@ -11,7 +11,7 @@ const HeroSection = () => {
     slidesToScroll: 1,
   };
   return (
-    <div>
+    <div className="relative before:bg-gradient-to-r before:from-primary-brand-color before:to-transparent before:absolute before:inset-0 before:w-full before:h-full before:z-10">
       <Slider {...settings}>
         <div>
           <img

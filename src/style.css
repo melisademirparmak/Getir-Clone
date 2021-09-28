@@ -635,6 +635,10 @@ html,
   }
 }
 
+.relative {
+  position: relative;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -646,14 +650,6 @@ html,
 
 .h-11 {
   height: 2.75rem;
-}
-
-.h-\[500px\] {
-  height: 500px;
-}
-
-.h-\[300px\] {
-  height: 300px;
 }
 
 .h-\[600px\] {
@@ -684,7 +680,7 @@ html,
 
 .bg-brand-color {
   --tw-bg-opacity: 1;
-  background-color: rgba(93, 62, 188, var(--tw-bg-opacity));
+  background-color: rgba(76, 51, 152, var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -720,6 +716,50 @@ html,
 @import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css');
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css');
+
+.before\:absolute::before {
+  content: "";
+  position: absolute;
+}
+
+.before\:inset-0::before {
+  content: "";
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.before\:z-10::before {
+  content: "";
+  z-index: 10;
+}
+
+.before\:h-full::before {
+  content: "";
+  height: 100%;
+}
+
+.before\:w-full::before {
+  content: "";
+  width: 100%;
+}
+
+.before\:bg-gradient-to-r::before {
+  content: "";
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.before\:from-primary-brand-color::before {
+  content: "";
+  --tw-gradient-from: #5d3ebc;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(93, 62, 188, 0));
+}
+
+.before\:to-transparent::before {
+  content: "";
+  --tw-gradient-to: transparent;
+}
 
 .hover\:text-opacity-100:hover {
   --tw-text-opacity: 1;
