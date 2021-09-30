@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Slider from 'react-slick';
 import ReactFlagsSelect from 'react-flags-select';
+import { FaFacebook } from 'react-icons/fa';
 
 const HeroSection = () => {
   const [selected, setSelected] = useState('TR');
@@ -20,6 +21,10 @@ const HeroSection = () => {
     arrows: false,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    speed: 500,
+    autoplaySpeed: 3500,
+    cssEase: 'linear',
   };
   return (
     <div className="relative h-[500px] before:bg-gradient-to-r before:from-primary-brand-color before:to-transparent before:absolute before:inset-0 before:w-full before:h-full before:z-10">
@@ -53,25 +58,34 @@ const HeroSection = () => {
           <h4 className="text-primary-brand-color text-center font-semibold mb-4">
             Giriş yap veya kayıt ol
           </h4>
-          <div className="flex gap-x-2">
-            <ReactFlagsSelect
-              countries={Object.keys(phones)}
-              customLabels={phones}
-              onSelect={(code) => setSelected(code)}
-              selected={selected}
-              className="flag-select"
-            />
-            <label className="flex-1 relative block">
-              <input
-                required
-                className="h-14 px-4 border-2 border-gray-200 rounded w-full transition-colors hover:border-primary-brand-color outline-none focus:border-primary-brand-color peer text-sm pt-2"
+          <div className="grid gap-y-3">
+            <div className="flex gap-x-2">
+              <ReactFlagsSelect
+                countries={Object.keys(phones)}
+                customLabels={phones}
+                onSelect={(code) => setSelected(code)}
+                selected={selected}
+                className="flag-select"
               />
-              <span className="absolute top-0 left-0 h-full px-4 flex items-center text-gray-500 text-sm  peer-focus:h-7  peer-focus:text-primary-brand-color peer-focus:text-xs peer-valid:h-7  peer-valid:text-primary-brand-color peer-valid:text-xs transition-all">
-                Telefon Numarası
-              </span>
-            </label>
+              <label className="flex-1 relative group block cursor-pointer">
+                <input
+                  required
+                  className="h-14 px-4 border-2  border-gray-200 rounded w-full transition-colors group-hover:border-primary-brand-color outline-none focus:border-primary-brand-color peer text-sm pt-2"
+                />
+                <span className="absolute top-0 left-0 h-full px-4 flex items-center text-gray-500 text-sm  peer-focus:h-7  peer-focus:text-primary-brand-color peer-focus:text-xs peer-valid:h-7  peer-valid:text-primary-brand-color peer-valid:text-xs transition-all">
+                  Telefon Numarası
+                </span>
+              </label>
+            </div>
+            <button className="bg-brand-yellow h-12 flex items-center justify-center rounded-md w-full text-sm font-semibold text-primary-brand-color transition-colors hover:bg-primary-brand-color hover:text-brand-yellow">
+              Telefon numarası ile devam et
+            </button>
+            <hr className="h-[1px] bg-gray-300 my-2" />
+            <button className="bg-blue-700 px-4 bg-opacity-10 h-12 flex items-center  rounded-md w-full text-sm font-semibold text-blue-700 text-opacity-80  transition-colors hover:bg-blue-700 hover:text-white">
+              <FaFacebook size={16} className="" />
+              <span className="mx-auto"> Facebook ile devam et</span>
+            </button>
           </div>
-          <button>Telefon numarası ile devam et</button>
         </div>
       </div>
     </div>
