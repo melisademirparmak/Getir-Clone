@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Category = ({ category: { id, title, image } }) => {
+const Category = ({ category: { id, title, image } }) => {
   return (
     <a
       href="/"
@@ -17,3 +17,5 @@ export const Category = ({ category: { id, title, image } }) => {
     </a>
   );
 };
+
+export default Category;
