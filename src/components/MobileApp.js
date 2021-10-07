@@ -3,7 +3,7 @@ import MobileAppNav from 'components/MobileAppNav';
 
 const MobileApp = () => {
   return (
-    <div className="bg-primary-brand-color bg-mobil-app mt-7 rounded-lg text-white flex justify-between items-center">
+    <div className="bg-primary-brand-color bg-mobil-app  rounded-lg text-white flex justify-between items-center">
       <div className="flex flex-col gap-y-3  p-10 ">
         <h3 className="text-2xl font-bold  tracking-tighter">
           Getir'i indirin!
