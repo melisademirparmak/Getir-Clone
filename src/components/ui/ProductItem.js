@@ -7,7 +7,7 @@ const ProductItem = ({ product }) => {
         <button className="w-8 h-8 flex absolute top-0 right-2 border shadow-md rounded-lg border-gray-200 text-purple-700 transition-colors bg-white hover:bg-purple-50 items-center justify-center">
           <AiOutlinePlus size={16} />
         </button>
-        <img src={product.image} className="w-full" />
+        <img src={product.image} alt={product.title} className="w-full" />
       </picture>
       <div className=" font-semibold text-brand-color ">₺{product.price}</div>
       <div className=" font-bold text-gray-700">{product.title}</div>
