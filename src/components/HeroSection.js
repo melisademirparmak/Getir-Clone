@@ -82,7 +82,7 @@ const HeroSection = () => {
             </button>
             <hr className="h-[1px] bg-gray-300 my-2" />
             <button className="bg-blue-700 px-4 bg-opacity-10 h-12 flex items-center  rounded-md w-full text-sm font-semibold text-blue-700 text-opacity-80  transition-colors hover:bg-blue-700 hover:text-white">
-              <FaFacebook size={16} className="" />
+              <FaFacebook size={16} />
               <span className="mx-auto"> Facebook ile devam et</span>
             </button>
           </div>

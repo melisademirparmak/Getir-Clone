@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import footerData from 'api/footerNav.json';
 import FooterItem from 'components/ui/FooterItem';
+import FooterMobileNav from 'components/FooterMobileNav';
+import SocialMedia from './SocialMedia';
 
 const Footer = () => {
   const [footerMenu, setFooterMenu] = useState([]);
@@ -14,34 +16,24 @@ const Footer = () => {
       <div className="container mx-auto">
         <div className="grid grid-cols-4 pt-10">
           <section>
-            <nav className="grid gap-y-4">
-              <h6 className="text-lg text-primary-brand-color">
-                Getir' i İndirin
-              </h6>
-              <a href="/">
-                <img
-                  src="https://getir.com/_next/static/images/appstore-tr-141ed939fceebdcee96af608fa293b31.svg"
-                  alt="App Store"
-                />
-              </a>
-              <a href="/">
-                <img
-                  src="https://getir.com/_next/static/images/googleplay-tr-6b0c941b7d1a65d781fb4b644498be75.svg"
-                  alt="Google Play Store"
-                />
-              </a>
-              <a href="/">
-                <img
-                  src="https://getir.com/_next/static/images/huawei-appgallery-tr-4b890fa3167bc62f9069edaf45aa7f30.svg"
-                  alt="App Galery"
-                />
-              </a>
-            </nav>
+            <FooterMobileNav />
           </section>
           {footerMenu &&
             footerMenu.map((footerMenu, key) => (
               <FooterItem key={key} footerMenu={footerMenu} />
             ))}
+        </div>
+        <div className="flex justify-between items-center border-t border-gray-200 mt-6 py-6">
+          <div className="text-xs text-gray-700 flex gap-x-8">
+            &copy; 2021 Getir
+            <a
+              href="/"
+              className="text-primary-brand-color hover:underline relative before:w-0.5 before:h-0.5 before:bg-black before:absolute before:-left-5 before:top-1/2 before:-translate-y-1/2 before:rounded-full"
+            >
+              Bilgi Toplumu Hizmetleri
+            </a>
+          </div>
+          <SocialMedia />
         </div>
       </div>
     </div>
