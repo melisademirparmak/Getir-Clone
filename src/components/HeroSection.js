@@ -39,7 +39,7 @@ const HeroSection = () => {
         <div>
           <img
             className="w-full h-[500px]"
-            src="https://getir.com/_next/static/images/getir-mainpage-1-757eca6a46304def60cabce74d3f20a2.jpg"
+            src="https://getir.com/_next/static/images/getir-mainpage-2-7c23764275cdaf14d7b6cf15ebbdd0c1.jpg"
             alt="Getir 2"
           />
         </div>
