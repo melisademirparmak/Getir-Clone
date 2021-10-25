@@ -5,7 +5,7 @@ import { RiUserFill, RiUserAddFill } from 'react-icons/ri';
 const Navbar = () => {
   return (
     <div>
-      <nav className="flex gap-x-8 text-sm font-semibold">
+      <nav className="hidden md:flex gap-x-8 text-sm font-semibold">
         <a
           href="/"
           className="flex items-center gap-x-2 text-white text-opacity-80 hover:text-opacity-100 transition-all "
