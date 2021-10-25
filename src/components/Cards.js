@@ -10,7 +10,7 @@ const Cards = () => {
   }, []);
   return (
     <>
-      <div className="grid mt-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="grid mt-4   md:grid-cols-2 lg:grid-cols-3 px-4 md:px-0 gap-4">
         {card && card.map((card, key) => <CardItem key={key} card={card} />)}
       </div>
     </>
