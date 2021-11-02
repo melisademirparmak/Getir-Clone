@@ -1,10 +1,10 @@
 const FooterItem = ({ footerMenu: { title, items } }) => {
   return (
     <section>
-      <nav>
+      <nav className="grid gap-y-2 md:gap-y-4">
         <h6 className="text-lg text-primary-brand-color mb-3">{title}</h6>
         <nav>
-          <ul className="grid gap-y-2">
+          <ul className="grid  md:gap-y-2">
             {items.map((item, key) => (
               <li key={key}>
                 <a href="/" className="text-sm  hover:text-brand-color">

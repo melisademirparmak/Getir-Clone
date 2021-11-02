@@ -3,7 +3,6 @@ import Slider from 'react-slick';
 import Banners from 'api/banners.json';
 import Title from 'components/ui/Title';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
-import { useWindowWidth } from '@react-hook/window-size';
 
 function NextBtn({ onClick }) {
   return (
@@ -28,7 +27,6 @@ function PrevBtn({ onClick }) {
 }
 
 const Campaign = () => {
-  const windowWidth = useWindowWidth();
   const [banners, setBanners] = useState([]);
 
   useEffect(() => {
