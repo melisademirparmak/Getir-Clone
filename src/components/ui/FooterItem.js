@@ -20,7 +20,7 @@ const FooterItem = ({ footerMenu: { title, items } }) => {
     if (!isOpen && windowWidth > 768) {
       setIsOpen(true);
     }
-  }, [windowWidth]);
+  },[windowWidth]);
   return (
     <section>
       <nav className="grid gap-y-2 md:gap-y-4">

@@ -40,7 +40,6 @@ const Campaign = () => {
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 500,
     arrows: true,
     autoplaySpeed: 2000,
     cssEase: 'linear',
