@@ -6,23 +6,24 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css');
 @layer base {
-  html,
-  body {
-    font-family: 'Open Sans', sans-serif;
-    @apply antialiased bg-gray-50;
-  }
+    html,
+    body {
+        font-family: 'Open Sans', sans-serif;
+        @apply antialiased bg-gray-50;
+    }
 }
 .flag-select {
-  @apply !pb-0;
+    @apply !pb-0;
 }
+
 .flag-select button {
-  @apply h-14 border-2 border-gray-200 transition-colors bg-white rounded hover:border-primary-brand-color;
+    @apply h-14 border-2 border-gray-200 transition-colors bg-white rounded hover:border-primary-brand-color;
 }
 
 .flag-select button > span span:nth-child(2) {
-  @apply text-sm pl-2;
+    @apply text-sm pl-2;
 }
 
 .ReactCollapse--collapse {
-  @apply transition-all;
+    @apply transition-all;
 }
